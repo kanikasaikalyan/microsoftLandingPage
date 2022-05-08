@@ -345,6 +345,16 @@ footer ul li:hover{
     #display{
         visibility: hidden;
     }
+    @keyframes icon_smooth {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+        
+    }
 
     #display #icon-close{
        
