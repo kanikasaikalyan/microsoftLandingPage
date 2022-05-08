@@ -20,15 +20,23 @@
 
 let small=document.getElementById("menu_icon");
 let menu=document.getElementById("display");
+let hindi = document.getElementById("hindi");
 
 small.onclick=function(){
     menu.style.visibility='visible';
-    console.log(menu)
-
-    console.log('clicked');
+    menu.style.animation = "icon_smooth 3s ease-in-out";
+    hindi.classList.add = "hindi";
 }
+
+hindi.onclick = () => {
+  hindi.classList.remove = "hindi";
+  menu.style.visibility = "hidden";
+  menu.style.animation = "";
+  console.log("clicked");
+};
 
 document.getElementById("icon-close").onclick=function(){
     menu.style.visibility='hidden';
+    menu.style.animation = "";
 
 }
